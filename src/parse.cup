@@ -1,0 +1,98 @@
+// parse.cup
+import java_cup.runtime.Symbol;
+import java_cup.runtime.*;
+import java.util.ArrayList;
+import javax.swing.JOptionPane;
+
+parser code {:
+    // Este método se llama automáticamente en caso de un error sintáctico.
+    public void report_error(String message, Object info) {
+        StringBuilder m = new StringBuilder("Error Sintáctico");
+        if (info instanceof java_cup.runtime.Symbol) {
+            java_cup.runtime.Symbol s = ((java_cup.runtime.Symbol) info);
+            if (s.left >= 1) {
+                m.append(" en línea ").append(s.left);
+                if (s.right >= 1)
+                    m.append(", columna ").append(s.right);
+            }
+        }
+        m.append(" : ").append(message);
+
+        if (info instanceof java_cup.runtime.Symbol) {
+            java_cup.runtime.Symbol s = ((java_cup.runtime.Symbol) info);
+            if (s.value != null) {
+                 m.append(" (token problemático: '").append(s.value).append("')");
+            } else {
+                // MODIFICADO: usa 'sym' en minúsculas
+                String[] terms = sym.terminalNames;
+                if (terms != null && s.sym >=0 && s.sym < terms.length && terms[s.sym] != null && !terms[s.sym].equals("error")) {
+                     m.append(" (cerca del token tipo '").append(terms[s.sym]).append("')");
+                } else if (s.sym == sym.EOF) { // MODIFICADO: usa 'sym' en minúsculas
+                     m.append(" (al final del archivo)");
+                }
+            }
+        }
+        System.err.println(m.toString());
+        JOptionPane.showMessageDialog(null, m.toString(), "Error de Sintaxis", JOptionPane.ERROR_MESSAGE);
+    }
+
+    public void report_fatal_error(String message, Object info) {
+        report_error(message, info);
+        throw new RuntimeException("Error sintáctico fatal: " + message + (info instanceof Symbol ? " cerca del token " + ((Symbol)info).value : ""));
+    }
+:};
+
+// Declaración de terminales (tokens del lexer)
+// Estas declaraciones no cambian. CUP generará estas constantes dentro de la clase/interfaz 'sym'.
+terminal ADD, SHOW, DELETE, UPDATE;
+terminal String ID;
+terminal String STRING;
+
+// Declaración de no terminales
+non terminal program;
+non terminal command_list_opt;
+non terminal command_list;
+non terminal command;
+
+// Símbolo inicial
+start with program;
+
+// Reglas de Producción (permanecen igual que en la versión anterior funcional)
+program ::= command_list_opt;
+
+command_list_opt ::= command_list
+                   | /* epsilon */
+                   ;
+
+command_list ::= command_list command
+               | command
+               ;
+
+command ::= ADD ID:nombre STRING:profesor STRING:lugar STRING:fecha
+            {: /* acción */ Main.clases.add(new Clase(nombre, profesor, lugar, fecha)); :}
+          | SHOW
+            {: /* acción */
+                StringBuilder sb = new StringBuilder("HORARIO ESCOLAR:\n====================\n");
+                if (Main.clases.isEmpty()) { sb.append("No hay clases para mostrar."); }
+                else { for (Clase clase : Main.clases) { sb.append(clase.toString()).append("\n--------------------\n"); } }
+                JOptionPane.showMessageDialog(null, sb.toString(), "Horario Escolar", JOptionPane.INFORMATION_MESSAGE);
+            :}
+          | DELETE ID:nombre
+            {: /* acción */
+                boolean removed = Main.clases.removeIf(clase -> clase.getNombre().equals(nombre));
+                if (!removed) { JOptionPane.showMessageDialog(null, "Clase '" + nombre + "' no encontrada.", "Error al Eliminar", JOptionPane.ERROR_MESSAGE); }
+            :}
+          | UPDATE ID:nombre STRING:newProfesor STRING:newLugar STRING:newFecha
+            {: /* acción */
+                boolean updated = false;
+                for (Clase clase : Main.clases) {
+                    if (clase.getNombre().equals(nombre)) {
+                        clase.setProfesor(newProfesor); clase.setLugar(newLugar); clase.setFecha(newFecha);
+                        updated = true; break;
+                    }
+                }
+                if (!updated) { JOptionPane.showMessageDialog(null, "Clase '" + nombre + "' no encontrada para actualizar.", "Error al Actualizar", JOptionPane.ERROR_MESSAGE); }
+            :}
+          | error
+            {: /* acción de error (opcional) */ :}
+          ;

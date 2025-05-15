@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="LenguajeES:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/LenguajeES_jar</output-path>
+    <root id="archive" name="LenguajeES.jar">
+      <element id="module-output" name="LenguajeES" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../../../java-cup-bin-11b-20160615/java-cup-11b.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../../../java-cup-bin-11b-20160615/java-cup-11b-runtime.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
