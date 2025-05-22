@@ -104,18 +104,12 @@ public class Main {
     }
 
     private static void ejecutarCodigo(String codigoFuente) throws Exception {
-        // Los System.out.println y System.err.println dentro de JFlex/CUP ahora irán a la consolaArea.
-        // También los mensajes de las acciones en parse.cup.
 
         Lexer lexer = new Lexer(new StringReader(codigoFuente));
         parsito cupParser = new parsito(lexer);
 
-        cupParser.parse(); // Esto ejecutará las acciones y los System.out/err
-        // que ahora se redirigen a la consolaArea.
+        cupParser.parse();
 
-        // Ya no necesitamos un JOptionPane general de "éxito" aquí,
-        // ya que las acciones del parser (como SHOW) o los errores
-        // ya interactúan con el usuario o escriben en la consola.
         appendToConsole("INFO: Procesamiento de comandos finalizado.\n--- Fin Ejecución ---\n");
     }
 }
@@ -161,14 +155,10 @@ class TextAreaOutputStream extends OutputStream {
 
     @Override
     public void write(byte[] b, int off, int len) {
-        // Este método se llama para bloques de bytes.
-        // Es más eficiente procesar el bloque y actualizar en flush() o cuando se encuentra un newline.
+
         String str = new String(b, off, len);
         sb.append(str);
-        // Podríamos llamar a flush() aquí si el string contiene newlines o es muy largo,
-        // pero para simplicidad, dejamos que el newline individual o el flush() explícito lo manejen.
-        // Si el rendimiento es un problema con muchos mensajes cortos sin newline, se puede optimizar.
-        if (str.contains("\n")) { // Si hay newlines, mejor hacer flush para ver las líneas completas
+        if (str.contains("\n")) {
             flush();
         }
     }
