@@ -1,0 +1,65 @@
+
+
+Version:	3.50
+CmdLine:	C:\Users\artur\OneDrive\Documentos\Uni\6to\Automatas\ES\Lenguaje_ES.exe --l4j-debug
+JNI:		No
+WOW64:		Yes
+Working dir:	C:\Users\artur\OneDrive\Documentos\Uni\6to\Automatas\ES\.
+Requires JDK:	No
+Requires 64-Bit: No
+Java min ver:	
+Java max ver:	
+Substitute:	JAVA_HOME = 
+Substitute:	PATH = C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\WINDOWS\AtlasModules;C:\WINDOWS\AtlasModules\Tools;C:\WINDOWS\AtlasModules\Scripts;C:\Program Files\NVIDIA Corporation\NVIDIA App\NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Tailscale\;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Users\artur\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\artur\AppData\Local\Programs\Python\Python311\;C:\Users\artur\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\artur\AppData\Local\Programs\Python\Python312\;C:\Users\artur\AppData\Local\Programs\Python\Python313\Scripts\;C:\Users\artur\AppData\Local\Programs\Python\Python313\;C:\Users\artur\AppData\Local\Microsoft\WindowsApps;C:\Users\artur\AppData\Local\JetBrains\Toolbox\scripts;C:\Users\artur\AppData\Local\GitHubDesktop\bin;C:\Program Files\Java\jre1.8.0_451\bin
+JRE paths:	;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\WINDOWS\AtlasModules;C:\WINDOWS\AtlasModules\Tools;C:\WINDOWS\AtlasModules\Scripts;C:\Program Files\NVIDIA Corporation\NVIDIA App\NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Tailscale\;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Users\artur\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\artur\AppData\Local\Programs\Python\Python311\;C:\Users\artur\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\artur\AppData\Local\Programs\Python\Python312\;C:\Users\artur\AppData\Local\Programs\Python\Python313\Scripts\;C:\Users\artur\AppData\Local\Programs\Python\Python313\;C:\Users\artur\AppData\Local\Microsoft\WindowsApps;C:\Users\artur\AppData\Local\JetBrains\Toolbox\scripts;C:\Users\artur\AppData\Local\GitHubDesktop\bin;C:\Program Files\Java\jre1.8.0_451\bin
+Check launcher:	C:\Program Files (x86)\Common Files\Oracle\Java\java8path\bin\javaw.exe (not found)
+Check launcher:	C:\Program Files (x86)\Common Files\Oracle\Java\javapath\bin\javaw.exe (not found)
+Check launcher:	C:\WINDOWS\system32\bin\javaw.exe (not found)
+Check launcher:	C:\WINDOWS\bin\javaw.exe (not found)
+Check launcher:	C:\WINDOWS\System32\Wbem\bin\javaw.exe (not found)
+Check launcher:	C:\WINDOWS\System32\WindowsPowerShell\v1.0\bin\javaw.exe (not found)
+Check launcher:	C:\WINDOWS\System32\OpenSSH\bin\javaw.exe (not found)
+Check launcher:	C:\WINDOWS\AtlasModules\bin\javaw.exe (not found)
+Check launcher:	C:\WINDOWS\AtlasModules\Tools\bin\javaw.exe (not found)
+Check launcher:	C:\WINDOWS\AtlasModules\Scripts\bin\javaw.exe (not found)
+Check launcher:	C:\Program Files\NVIDIA Corporation\NVIDIA App\NvDLISR\bin\javaw.exe (not found)
+Check launcher:	C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common\bin\javaw.exe (not found)
+Check launcher:	C:\Program Files\Tailscale\bin\javaw.exe (not found)
+Check launcher:	C:\Program Files\Git\cmd\bin\javaw.exe (not found)
+Check launcher:	C:\Program Files\dotnet\bin\javaw.exe (not found)
+Check launcher:	C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\bin\javaw.exe (not found)
+Check launcher:	C:\Users\artur\AppData\Local\Programs\Python\Python311\Scripts\bin\javaw.exe (not found)
+Check launcher:	C:\Users\artur\AppData\Local\Programs\Python\Python311\bin\javaw.exe (not found)
+Check launcher:	C:\Users\artur\AppData\Local\Programs\Python\Python312\Scripts\bin\javaw.exe (not found)
+Check launcher:	C:\Users\artur\AppData\Local\Programs\Python\Python312\bin\javaw.exe (not found)
+Check launcher:	C:\Users\artur\AppData\Local\Programs\Python\Python313\Scripts\bin\javaw.exe (not found)
+Check launcher:	C:\Users\artur\AppData\Local\Programs\Python\Python313\bin\javaw.exe (not found)
+Check launcher:	C:\Users\artur\AppData\Local\Microsoft\WindowsApps\bin\javaw.exe (not found)
+Check launcher:	C:\Users\artur\AppData\Local\JetBrains\Toolbox\scripts\bin\javaw.exe (not found)
+Check launcher:	C:\Users\artur\AppData\Local\GitHubDesktop\bin\javaw.exe (not found)
+Check launcher:	C:\Program Files\Java\jre1.8.0_451\bin\javaw.exe (OK)
+Version string: 1.008.000_451 / 64-Bit (OK)
+Launcher:	C:\Program Files\Java\jre1.8.0_451\bin\javaw.exe
+Launcher args:	-jar "C:\Users\artur\OneDrive\Documentos\Uni\6to\Automatas\ES\Lenguaje_ES.exe"
+Args length:	78/32768 chars
+Exit code:	0
+
+
+Version:	3.50
+CmdLine:	C:\Users\artur\OneDrive\Documentos\Uni\6to\Automatas\ES\Lenguaje_ES.exe --l4j-debug
+JNI:		No
+WOW64:		Yes
+Working dir:	C:\Users\artur\OneDrive\Documentos\Uni\6to\Automatas\ES\.
+Requires JDK:	No
+Requires 64-Bit: No
+Java min ver:	1.023.000_000
+Java max ver:	
+Substitute:	JAVA_HOME = C:\Program Files\Java\jdk-23
+Substitute:	PATH = C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\WINDOWS\AtlasModules;C:\WINDOWS\AtlasModules\Tools;C:\WINDOWS\AtlasModules\Scripts;C:\Program Files\NVIDIA Corporation\NVIDIA App\NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Tailscale\;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\Java\jdk-23\bin;C:\Users\artur\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\artur\AppData\Local\Programs\Python\Python311\;C:\Users\artur\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\artur\AppData\Local\Programs\Python\Python312\;C:\Users\artur\AppData\Local\Programs\Python\Python313\Scripts\;C:\Users\artur\AppData\Local\Programs\Python\Python313\;C:\Users\artur\AppData\Local\Microsoft\WindowsApps;C:\Users\artur\AppData\Local\JetBrains\Toolbox\scripts;C:\Users\artur\AppData\Local\GitHubDesktop\bin;C:\Program Files\Java\jdk-23\bin
+JRE paths:	C:\Program Files\Java\jdk-23;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\WINDOWS\AtlasModules;C:\WINDOWS\AtlasModules\Tools;C:\WINDOWS\AtlasModules\Scripts;C:\Program Files\NVIDIA Corporation\NVIDIA App\NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Tailscale\;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\Java\jdk-23\bin;C:\Users\artur\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\artur\AppData\Local\Programs\Python\Python311\;C:\Users\artur\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\artur\AppData\Local\Programs\Python\Python312\;C:\Users\artur\AppData\Local\Programs\Python\Python313\Scripts\;C:\Users\artur\AppData\Local\Programs\Python\Python313\;C:\Users\artur\AppData\Local\Microsoft\WindowsApps;C:\Users\artur\AppData\Local\JetBrains\Toolbox\scripts;C:\Users\artur\AppData\Local\GitHubDesktop\bin;C:\Program Files\Java\jdk-23\bin
+Check launcher:	C:\Program Files\Java\jdk-23\bin\javaw.exe (OK)
+Version string: 1.023.000_002 / 64-Bit (OK)
+Launcher:	C:\Program Files\Java\jdk-23\bin\javaw.exe
+Launcher args:	-jar "C:\Users\artur\OneDrive\Documentos\Uni\6to\Automatas\ES\Lenguaje_ES.exe"
+Args length:	78/32768 chars
+Exit code:	0
